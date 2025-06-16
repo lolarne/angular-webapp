@@ -1,12 +1,15 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { AuthService } from './auth.service';
+import { Subject } from 'rxjs';
 
 @Injectable({
   providedIn: 'root',
 })
 export class ShowService {
   private API = 'http://localhost:4000/shows';
+
+  refresh$ = new Subject<void>();
 
   constructor(private http: HttpClient, private auth: AuthService) {}
 

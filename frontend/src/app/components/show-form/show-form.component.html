@@ -1,1 +1,26 @@
-<p>show-form works!</p>
+<h3>Add a New Show</h3>
+
+<form (ngSubmit)="submit()" #form="ngForm">
+  <label>
+    Title:
+    <input name="title" [(ngModel)]="title" required />
+  </label>
+  <br />
+
+  <label>
+    Category:
+    <input name="category" [(ngModel)]="category" required />
+  </label>
+  <br />
+
+  <label>
+    Description:
+    <textarea name="description" [(ngModel)]="description"></textarea>
+  </label>
+  <br />
+
+  <button type="submit" [disabled]="!form.valid">Add Show</button>
+
+  <p *ngIf="success" style="color: green">{{ success }}</p>
+  <p *ngIf="error" style="color: red">{{ error }}</p>
+</form>

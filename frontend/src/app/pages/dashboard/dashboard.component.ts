@@ -3,10 +3,11 @@ import { ShowListComponent } from '../../components/show-list/show-list.componen
 import { AuthService } from '../../services/auth.service';
 import { Router } from '@angular/router';
 import { RouterModule } from '@angular/router';
+import { ShowFormComponent } from '../../components/show-form/show-form.component';
 
 @Component({
   selector: 'app-dashboard',
-  imports: [ShowListComponent, RouterModule],
+  imports: [ShowListComponent, ShowFormComponent, RouterModule],
   templateUrl: './dashboard.component.html',
   styleUrl: './dashboard.component.scss',
 })
