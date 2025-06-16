@@ -1,1 +1,12 @@
-<p>show-list works!</p>
+<h3>My Shows</h3>
+
+<ul *ngIf="shows.length; else noShows">
+  <li *ngFor="let show of shows">
+    <strong>{{ show.title }}</strong> ({{ show.category }})<br />
+    {{ show.description }}
+  </li>
+</ul>
+
+<ng-template #noShows>
+  <p>No shows added yet.</p>
+</ng-template>
