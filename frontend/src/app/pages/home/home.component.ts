@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
-import { LoginFormComponent } from '../../components/login-form/login-form.component';
+import { LandingComponent } from '../../components/landing/landing.component';
+import { AboutUsComponent } from '../../components/about-us/about-us.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [LoginFormComponent],
+  imports: [LandingComponent, AboutUsComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
 })

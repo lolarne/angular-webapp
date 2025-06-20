@@ -1,0 +1,35 @@
+@use '../../../styles.scss' as *;
+
+.landing {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #5475c7;
+  background: linear-gradient(
+    180deg,
+    rgba(84, 117, 199, 1) 0%,
+    rgba(146, 146, 204, 1) 33%,
+    rgba(179, 157, 209, 1) 66%,
+    rgba(231, 165, 203, 1) 100%
+  );
+  position: relative;
+
+  .content {
+    width: $content-width;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+  }
+
+  img.bg-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+  }
+}

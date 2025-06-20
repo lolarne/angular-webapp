@@ -1,1 +1,15 @@
 /* You can add global styles to this file, and also import other style files */
+$dark-color: #453550;
+$light-color: #efd9e2;
+$secondary-light-color: #7288c9;
+$primary-color: #3b50a2;
+$secondary-color: #b39dd1;
+$third-color: #e7a5cb;
+$content-width: 60vw;
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
